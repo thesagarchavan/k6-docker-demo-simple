@@ -3,8 +3,12 @@ name: k6 load test
 on:
   push:
     branches: [ main ]
+    paths:
+      - '**.js'
   pull_request:
     branches: [ main ]
+    paths:
+      - '**.js'
 
 jobs:
   load-test:
