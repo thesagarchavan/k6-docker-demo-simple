@@ -10,10 +10,11 @@ You can copy a test script from k6 samples. K6 provided a lot of samples address
 
 ```
 import http from 'k6/http';
-import { sleep } from 'k6';
+import { sleep, check } from 'k6';
 
 export default function() {
-  http.get('https://test.k6.io');
+  const response = http.get('https://test.k6.io');
+  check(response, {"Status is Ok(200)": (r) => r.status === 200})
   sleep(1);
 }
 ```
