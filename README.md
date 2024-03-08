@@ -1,5 +1,5 @@
 # Run tests with the k6 docker instance 
-Run tests with the k6 docker container with minimal efforts
+Run tests with the k6 docker container with minimal effort. K6 is a great tool to perform load testing, stress testing. The documentation is available at [Grafana official website](https://grafana.com/docs/k6/latest/) and [k6 website](https://k6.io/docs/).
 
 1. [Write a test script](#script-to-run)
 2. [Build and run k6](#build-and-run-k6-container)
