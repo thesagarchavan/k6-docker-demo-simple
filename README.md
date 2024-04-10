@@ -35,7 +35,7 @@ CMD ["run", "script.js","--vus","10","--duration","1m"]
     `docker buildx build -t k6_image_name --file .\Dockerfile .`
 
 5. Run a container with the docker image.
-    `docker run -rm --name k6_container_name k6_image_name`
+    `docker run --rm --name k6_container_name k6_image_name`
 
 
 ## Result
